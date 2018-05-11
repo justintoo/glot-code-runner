@@ -16,6 +16,8 @@ import (
 	"github.com/prasmussen/glot-code-runner/language/elm"
 	"github.com/prasmussen/glot-code-runner/language/erlang"
 	"github.com/prasmussen/glot-code-runner/language/fsharp"
+	"github.com/prasmussen/glot-code-runner/language/gnuc"
+	"github.com/prasmussen/glot-code-runner/language/gnucpp"
 	"github.com/prasmussen/glot-code-runner/language/golang"
 	"github.com/prasmussen/glot-code-runner/language/groovy"
 	"github.com/prasmussen/glot-code-runner/language/haskell"
@@ -59,6 +61,8 @@ var languages = map[string]runFn{
 	"fsharp":       fsharp.Run,
 	"haskell":      haskell.Run,
 	"idris":        idris.Run,
+	"gnuc":         gnuc.Run,
+	"gnucpp":       gnucpp.Run,
 	"go":           golang.Run,
 	"groovy":       groovy.Run,
 	"java":         java.Run,
